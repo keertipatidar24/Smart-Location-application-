@@ -1,0 +1,101 @@
+body { 
+    margin: 0; 
+    padding: 0; 
+}
+          
+#map { 
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
+}
+  
+.geocoder { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    z-index: 1; 
+    width: 400px; 
+}
+  
+.geocoder input { 
+    width: 100%; 
+    font-size: 14px; 
+}
+  
+#info { 
+    position: absolute; 
+    top: 130px; 
+    left: 10px; 
+    background: white; 
+    padding: 10px; 
+    z-index: 1; 
+    font-size: 14px; 
+}
+  
+#places { 
+    position: absolute; 
+    top: 200px; 
+    left: 10px; 
+    background: white; 
+    padding: 10px; 
+    z-index: 1; 
+    font-size: 14px; 
+    max-height: 300px; 
+    overflow-y: auto; 
+    margin-top: 60px; 
+    display: none; 
+}
+  
+@media (max-width: 600px) {
+    .geocoder {
+      width: 90%; 
+      left: 5%; 
+    }
+  
+    #places {
+      width: 90%; 
+      left: 5%;  
+    }
+  
+    #info {
+      width: 90%;
+      left: 5%;   
+    }
+  }
+  
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .geocoder {
+      width: 80%; 
+      left: 10%;  
+    }
+  
+    #places {
+      width: 80%; 
+      left: 10%;  
+    }
+  
+    #info {
+      width: 80%; 
+      left: 10%;  
+    }
+  }
+  
+
+  @media (min-width: 1025px) {
+    .geocoder {
+      width: 400px; 
+      left: 10px;  
+    }
+  
+    #places {
+      width: 300px;
+      left: 10px;   
+    }
+  
+    #info {
+      width: auto; 
+      left: 10px;   
+    }
+}
